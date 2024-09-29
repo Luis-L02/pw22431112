@@ -1,0 +1,192 @@
+html {
+    --color-verde: #74f43c;
+    --color-contenido: gray;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+p {
+    color: var(--color-contenido);
+}
+
+.logo {
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+}
+
+nav {
+    border-bottom: 1px dashed gray;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.iconos img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.buy {
+    position: absolute;
+    right: 250px;
+    top: 3%;
+    height: 30px;
+}
+
+.buy img[src="img/buy.png"] {
+    width: 60px;
+    transition: transform 1s;
+}
+.buy img[src="img/buy.png"]:hover {
+    transform:scale(1.2 );
+}
+
+.buy img[src="img/go_to_shop.png"] {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.hero h1 {
+    margin: 0px;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    border-bottom: 1px dashed gray;
+}
+
+.hero h1 span {
+    color: var(--color-verde);
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.bikeArticle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bike-image {
+    position: relative;
+}
+
+.warranty {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.bike-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.warranty img {
+    width: 100px;;
+    height: auto;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    color: var(--color-contenido);
+    padding: 20px;
+    text-align: start;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-links article {
+    text-align: left;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--color-contenido);
+}
+h4{
+    border-bottom: var(--color-contenido) 1px solid;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+}
+
+.social-icons img {
+    margin-right: 10px; 
+}
