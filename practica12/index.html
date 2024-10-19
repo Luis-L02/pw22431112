@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen HTML5 + CSS3</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -13,7 +15,7 @@
                 <li><img src="img/logo_library.png" alt=""></li>
                 <li><a href="#">PRODUCT</a></li>
                 <li><a href="#">PRICING</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">BLOG</a></li>
                 <li><a href="#">LIBRARY</a></li>
                 <li><a href="#">SUPPORT</a></li>
                 <li><a href="#">LOG IN</a></li>
@@ -40,17 +42,21 @@
                 </nav>
             </aside>
             <article class="library-content">
-                <h1>New in the Library</h1>
+                <article class="library-header">
+                    <h1>New in the Library</h1>
+                    <span class="view-all">VIEW ALL</span>
+                </article>
+                <p>Newly added accessibility resources, guides, and more.</p>
                 <article class="grid-cards">
                     <article class="card">
                         <img src="img/logo_humber.png" alt="">
                         <span>RESOURCES</span>
-                        <h2>  Making <br> Accessible Books </h2>
+                        <h2> Making <br> Accessible Books </h2>
                     </article>
                     <article class="card">
                         <img src="img/logo_daisy.png" alt="">
                         <span>RESOURCES</span>
-                        <h2>  Inclusive <br> Publishing </h2>
+                        <h2> Inclusive <br> Publishing </h2>
                     </article>
                     <article class="card">
                         <img src="img/logo_apln.png" alt="">
@@ -69,37 +75,40 @@
                     </article>
                     <article class="card">
                         <img src="img/logo_google.png" alt="">
-                        <span>RESOURCES</span>
+                        <span>BLOG & ARTICLES</span>
                         <h2> 4 steps to more <br> inclusive, precise <br> language </h2>
                     </article>
                 </article>
-                <h2>Featured Collections</h2>
+                <article class="library-header">
+                    <h2>Featured Collections</h2>
+                    <span class="view-all">VIEW ALL</span>
+                </article>
+                <p>Handpicked and curated collections around accessibility</p>
                 <article class="grid-collections">
-                    <article class="collection-card">
-                        <img src="img/employment.png" alt="">
-                        Disability Employment
+                    <article class="collection-card beige">
+                        <h2 class="card-header">Disability Employment</h2>
+                        <img src="img/employment.png" alt="Disability Employment">
                     </article>
-                    <article class="collection-card">
-                        <img src="img/combos.png" alt="">
-                        Making Accessible Color Combos
+                    <article class="collection-card combos">
+                        <h2 class="card-header">Making Accessible Color Combos</h2>
+                        <img src="img/combos.png" alt="Making Accessible Color Combos">
                     </article>
-                    <article class="collection-card">
-                        <img src="img/socialmedia.png" alt="">
-                        Tips and Tricks for Inclusive Social Media
+                    <article class="collection-card beige">
+                        <h2 class="card-header">Tips and Tricks for Inclusive Social Media</h2>
+                        <img src="img/socialmedia.png" alt="Tips and Tricks for Inclusive Social Media">
                     </article>
                 </article>
             </article>
         </section>
     </main>
-    <footer class="grid-footer">
-        <article>
-            <h2>
-                Made remotely with love by <br> Stark Lab, Inc.
-            </h2>
-            <img src="img/logo_library2.png" alt="">
+    <footer class="footer">
+        <article class="footer-header">
+            <h2 class="footer-title">Made remotely with love by <br> Stark Lab, Inc.</h2>
+            <img src="img/logo_library2.png" alt="Stark Lab Logo" class="footer-logo">
         </article>
-        <article class="grid-footer-links">
-            <article>
+
+        <section class="footer-content">
+            <article class="footer-section">
                 <h3>PRODUCT</h3>
                 <ul>
                     <li><a href="#">Stark for Figma</a></li>
@@ -113,7 +122,8 @@
                     <li><a href="#">Stark for Brave</a></li>
                 </ul>
             </article>
-            <article>
+
+            <article class="footer-section">
                 <h3>RESOURCES</h3>
                 <ul>
                     <li><a href="#">Blog</a></li>
@@ -121,16 +131,18 @@
                     <li><a href="#">Release Notes</a></li>
                 </ul>
             </article>
-            <article>
+
+            <article class="footer-section">
                 <h3>HELP</h3>
                 <ul>
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Support Docs</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Feacture Requests</a></li>
+                    <li><a href="#">Feature Requests</a></li>
                 </ul>
             </article>
-            <article>
+
+            <article class="footer-section">
                 <h3>COMPANY</h3>
                 <ul>
                     <li><a href="#">Press Releases</a></li>
@@ -142,7 +154,19 @@
                     <li><a href="#">Code of Conduct</a></li>
                 </ul>
             </article>
-        </article>
-    </footer>
+        </section>
+
+        <section class="footer-bottom">
+            <img class="links" src="img/links.png" alt="Logos Links">
+            <article class="footer-right">
+                <span class="copyright">
+                    STARK LAB, INC. COPYRIGHT 2023
+                </span>
+            </article>
+            <button class="chat-button" aria-label="Open chat">
+                <img src="img/support.png" alt="Support Icon">
+            </button>
+        </section>
+    </footer>  
 </body>
 </html>
