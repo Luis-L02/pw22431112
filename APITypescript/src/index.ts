@@ -1,8 +1,8 @@
-import express from 'express';
-import personalRoutes from '../routes/personalRoutes.ts';
+import express =  require('express');
+import personalRoutes from './routes/personalRoutes';
 const app = express();
 const PORT = 3001;
-
+//asddddklsdklfsjdfjs
 app.use(express.json());
 app.use('/api/personal',personalRoutes);
 
