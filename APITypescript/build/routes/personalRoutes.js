@@ -43,6 +43,10 @@ router.get('/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     let personal = yield PersonalServices.getPersonalOne(Number(req.params.id));
     res.json(personal);
 }));
+router.get('/telefono/:telefono', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    let personal = yield PersonalServices.getPersonalTelefono(req.params.telefono);
+    res.json(personal);
+}));
 router.post('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { nombre, direccion, telefono, estatus } = req.body;
@@ -63,7 +67,6 @@ router.put('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             telefono,
             estatus
         });
-        console.log(modificado);
         res.send(modificado);
     }
     catch (error) {
